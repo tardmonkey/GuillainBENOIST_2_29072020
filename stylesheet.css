@@ -1,0 +1,57 @@
+@font-face {
+    font-family: "Raleway-black.ttf", "Raleway-Light.ttf", "source/Raleway/Raleway-Bold.ttf" Arial, Helvetica, sans-serif;
+    src: url(source/Raleway/Raleway-Black.ttf);
+    src: url(source/Raleway/Raleway-Light.ttf);
+    src: url(source/Raleway/Raleway-Bold.ttf);
+}
+
+*{
+    font-family: "Raleway";
+}
+
+.filtre:hover{
+    color:grey;
+}
+
+li{
+    list-style: none;
+    font-weight: bold;
+}
+
+h1{
+    font-weight: bold;
+}
+
+h2{
+    font-weight: normal;
+    font-size: 1.2em;
+}
+
+#bouttonRecherche{
+    color:white;
+    background-color: #0065FC;
+    
+}
+/* Table du champ de recherche */
+#champRecherche {
+    height: 4em;
+    border: grey solid 0.5em;
+}
+/* Tableau filtres */
+#filtres{
+    border: red solid 0.5em;   
+    height: 4em;
+}
+
+/* Liste navigation */
+#navigation{
+    border: green solid 0.5em;
+    display:flex;
+    flex-direction: row;
+    height: 3em;
+}
+
+#pageBody{
+    display:flex;
+    flex-direction: row;
+}
