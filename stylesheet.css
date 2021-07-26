@@ -5,17 +5,78 @@
     src: url(source/Raleway/Raleway-Bold.ttf);
 }
 
+
+
 *{
     font-family: "Raleway";
+    
+}
+body{
+    display:flex;
+    flex-direction: column;
+    flex-wrap:wrap;
+    
 }
 
-.filtre:hover{
-    color:grey;
+header{
+    display:flex;
+    flex-direction: column;
+    width: 100%;
+    
 }
 
-li{
-    list-style: none;
+
+/* Liste navigation */
+nav{
+ 
+    height: 5em;
+    width: 20em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     font-weight: bold;
+    position:absolute;
+    top:1em;
+    right:1em;   
+    
+}
+nav a{    
+    color:black;
+    
+    
+}
+nav a:link {
+    text-decoration: none;
+  }
+  
+nav  a:visited {
+    text-decoration: none;
+  }
+  
+nav  a:hover {
+    text-decoration: none;    
+    color:#0065FC;
+  }
+  
+ nav a:active {
+    text-decoration: none;
+  }
+nav p {
+    color:#0065FC;
+    
+}
+
+.navItem {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 5em;
+    width: 90%%;
+    
+}
+.navItem:hover{
+    border-top:#0065FC solid 0.1em;
+    
 }
 
 h1{
@@ -27,31 +88,172 @@ h2{
     font-size: 1.2em;
 }
 
+input[type=submit] {
+    
+    outline: none;
+    border: none;
+    font-family: inherit;
+    font-weight: bold;
+    font-size: 90%;
+    
+  }
+input[type=search] {
+    outline: none;
+    border: none;
+    font-family: inherit;
+    font-weight: bold;
+    font-size: 100%;
+    
+  }
 #bouttonRecherche{
     color:white;
     background-color: #0065FC;
     
 }
 /* Table du champ de recherche */
+/* Table du champ de recherche */
 #champRecherche {
-    height: 4em;
-    border: grey solid 0.5em;
+    height: 2.5em;
+    width: 21em;
+    border: #F2F2F2 solid 0.1em;
+    border-radius: 0.8em;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    overflow: hidden;
+    
 }
-/* Tableau filtres */
+
+/* Objet à l'intérieur du champ recherche */
+/* Objet à l'intérieur du champ recherche */
+.itemRecherche:nth-child(1){
+    display: flex;
+    height: 100%;
+    width: 50%;
+    background-color: #F2F2F2;
+    justify-content: center;
+    align-items: center;    
+   
+}
+.itemRecherche:nth-child(2){
+    display:flex;    
+    padding-left: 0.5em;
+    
+}
+.itemRecherche:nth-child(3){
+    display: flex;
+    height: 100%;    
+    background-color:#0065FC;
+    justify-content: center;
+    align-items: center;    
+    padding: 0.5em 0.5em 0.5em 0.5em;
+}
+
+
+/* FILTRES */
+/* FILTRES */
+
 #filtres{
-    border: red solid 0.5em;   
-    height: 4em;
-}
-
-/* Liste navigation */
-#navigation{
-    border: green solid 0.5em;
-    display:flex;
-    flex-direction: row;
+    display:flex;   
+    align-items:center;    
+    /* border: red solid 2px;    */
     height: 3em;
+    font-weight: bold;
+    width: 100%;
 }
 
-#pageBody{
+.filtre{
+    margin-right: 1em;
+    margin-left: 1em;
     display:flex;
-    flex-direction: row;
+    border:#DEEBFF solid 0.2em;
+    border-radius:10em;
+    align-items: center;
+    height: 2.7em;
+    
+    
 }
+
+.filtrePic{
+    display: flex;    
+    height: 3em;    
+    width: 3em;
+    border-radius: 10em;
+    background-color:#DEEBFF;
+    color:#0065FC;
+    justify-content: center;
+    align-items: center;        
+}
+
+
+
+.filtreTexte{
+    margin-right: 0.5em;
+    margin-left: 0.5em;
+}
+
+/* changer couleur menu au passage souris  */
+.filtre:hover{
+    background-color:#F2F2F2;
+}
+
+#infoBulle{
+    display:flex;
+    align-items: center;      
+     
+    
+}
+
+/* Section bulle INFO */
+.infoPic{
+    display:flex;
+    justify-content: center;    
+    align-items: center;
+    color:#0065FC;
+    border:#DEEBFF solid 0.2em;
+    border-radius: 10em;
+    height: 1.5em;
+    width: 1.5em;
+    margin-right: 0.5em;
+}
+
+#hebergements{
+    
+    background-color:#F2F2F2;
+    width: 60%;
+    height: 50em;
+    font-weight: bold;
+    border-radius: 1em;
+    padding: 1em 1em 1em 1em;;
+    
+    
+}
+
+#infosHebergements{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+    
+}
+
+.imgHebergements{     
+    border-radius: 1em;
+    border: white solid 0.5em;
+    box-shadow:  0 -3em 3em rgba(0,0,0,0.1),
+             0 0  0 2px rgb(255,255,255),
+             0.3em 0.3em 1em rgba(0,0,0,0.3);
+    
+}
+
+.imgHebergements img{
+    border-radius: 1em;    
+    
+}
+
+.texteHebergements{
+    background-color: white;
+    height: 5em;
+    
+}
+

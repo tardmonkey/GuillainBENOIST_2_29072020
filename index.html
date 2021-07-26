@@ -1,69 +1,82 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
-    <script src="https://kit.fontawesome.com/0ce2ea1d23.js" crossorigin="anonymous"></script>
-    <meta charset="utf-8" />
+    <meta charset="utf-8">
     <title>Reservia - trouvez votre hébergement pour des vacances de rêve</title>
+    <script src="https://kit.fontawesome.com/0ce2ea1d23.js" crossorigin="anonymous"></script>
+    <meta charset="utf-8" />   
     <link rel="stylesheet" href="stylesheet.css" />
 </head>
-<div id="pageBody">
+<body>
     <header>
-        <img src="images/logo/Reservia.svg">
+        <div id="logo"><img src="images/logo/Reservia.svg"></div>
         <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
         <h2>En plein centre ville ou en pleine nature</h2>
-        
     </header>
-    
-    <nav>
-        <li id="navigation">
-            <ul><a href=#ancreHeb />Hébergements</a></ul>
-            <ul><a href=#ancreAct />Activités</a></ul>
-            <ul>S'inscrire</ul>
-        </li>
-    </nav>
-    
-    <body>
-        <table id="champRecherche">
-            <td><i class="fas fa-map-marker-alt"></i></td>
-            <td>
-                <form>
-                    <p><input type="search" metdod="post" action="" name="champRecherche" id="recherche"/></p>
-                </form>
-            </lr>
-            <td><input type="submit" value="Rechercher" id="bouttonRecherche"></td>      
-        </table>
 
-        <table id="filtres">
-            <td>Filtres</lr>
-            <td class="filtre"><i class="fas fa-money-bill-wave"></td><td></i>Economique</td>
-            <td class="filtre"><i class="fas fa-child"></td><td></i>Familial</td>
-            <td class="filtre"><i class="fas fa-heart"></td><td></i>Romantique</td>
-            <td class="filtre"><i class="fas fa-dog"></td><td></i>Animaux autorisés</td>
-        </table>
-        
-        <p>Plus de 500 logements sont disponibles dans cette ville</p>
-
-        <div>Hébergements à marseille</div>
-        <div>Les plus populaires</div>
-<i class="fas fa-map-marker-alt"></i>
-<i class="fas fa-money-bill-wave"></i>
-<i class="fas fa-dog"></i>
-<i class="fas fa-heart"></i>
-<i class="fas fa-child"></i>
-<i class="fas fa-star"></i>
-    </body>
-    <footer>
-        <table>
-            <tr>
-                <th>A propos</th>
-                <th>Nos hébergements</th>
-                <th>Assistance</th>
-            </tr>
-            <tr>
-                <td>Fonctionnement du site</td>
-                <td>Conditions générales de ventes</td>
-                <td>Données et confidentialité</td>
+        <!-- Menu Navigation -->
+        <!-- Menu Navigation -->
+        <nav>
+           
+                <p class="navItem"><a href=#ancreHeb />Hébergements</a></p>
+                <p class="navItem"><a href=#ancreAct />Activités</a></p>
+                <p class="navItem">S'inscrire</p>
             
-                </tr>
-        </table>
-    </footer>
-</div>
+        </nav>
+
+        <!-- Section Recherche -->
+        <!-- Section Recherche -->
+        <section id="champRecherche">
+           
+                <p class="itemRecherche"><i class="fas fa-map-marker-alt"></i></p>
+                <p class="itemRecherche"><input type="search" method="post" action="" name="champRecherche" id="recherche" value="Marseille, France"/></p>
+                <p class="itemRecherche"><input type="submit" value="Rechercher" id="bouttonRecherche"></p>    
+
+        </section>
+
+        <!-- Section Filtres -->
+        <!-- Section Filtres -->
+        <br />
+        <section id="filtres">            
+                <p>Filtres</p>
+                <div class="filtre"></p><p class="filtrePic"><i class="fas fa-money-bill-wave"></p></i><p class="filtreTexte">Economique</p></div>
+                <div class="filtre"><p class="filtrePic"><i class="fas fa-child"></p></i><p class="filtreTexte">Familial</p></div>
+                <div class="filtre"></p><p class="filtrePic"><i class="fas fa-heart"></p></i><p class="filtreTexte">Romantique</p></div>
+                <div class="filtre"></p><p class="filtrePic"><i class="fas fa-dog"></p></i><p class="filtreTexte">Animaux autorisés</p></div>            
+        </section>
+        <section id="infoBulle">
+            <p class="infoPic"><i class="fas fa-info"></i></p><p>Plus de 500 logements sont disponibles dans cette ville</p>      
+         </section>
+
+        <article>
+            <p>Activités à Marseille</p>
+        </article>
+        <section id="hebergements">
+            <p>Hébergements à Marseille</p>
+                <div id="infosHebergements">
+                    <div class="imgHebergements"><img src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Image hébergement" width="250" height="250"><div class="texteHebergements">Hôtel de la cannebière</div></div>
+                    <div class="imgHebergements"><img src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Image hébergement" width="250" height="250"><div class="texteHebergements"></div></div>
+                    <div class="imgHebergements"><img src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Image hébergement" width="250" height="250"><div class="texteHebergements"></div></div>
+                    <div class="imgHebergements"><img src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Image hébergement" width="250" height="250"><div class="texteHebergements"></div></div>
+                    <div class="imgHebergements"><img src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Image hébergement" width="250" height="250"><div class="texteHebergements"></div></div>
+                    <div class="imgHebergements"><img src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Image hébergement" width="250" height="250"><div class="texteHebergements"></div></div>
+                </div>
+                    <p>Afficher plus</p>
+        </section>
+        <aside>
+            <p>Les plus populaires</p>
+            
+        </aside>
+
+        <!-- Pied de page -->
+        <!-- Pied de page -->
+        <footer>
+            <p>&copy; HTML CheatSheet</p>
+            <p>Assistance</p> <br />
+            <p>Cente d'aide</p> <br />
+          <address>
+            <p>Nous contacter</p>
+           </address>
+        </footer>
+</body>
+</html>
