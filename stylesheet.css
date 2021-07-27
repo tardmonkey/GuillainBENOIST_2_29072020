@@ -47,6 +47,14 @@ h4{
     
     
 }
+/* enlève le modèle de base de balises <a> */
+a, a:link,a:visited,a:hover{    
+    color:black;
+    text-decoration: none;
+    
+}
+
+
 /* Liste navigation */
 nav{
  
