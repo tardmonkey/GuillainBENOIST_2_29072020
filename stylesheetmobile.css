@@ -1,0 +1,61 @@
+*{color:red;}
+
+/* Liste navigation */
+nav{
+ 
+    height: 5em;
+    width: 20em;
+    display: flex;    
+    justify-content: space-around;
+    align-items: center;
+    font-weight: bold;    
+    position:relative
+    
+}
+nav a{    
+    color:black;
+    display: flex;
+    margin-right: 1em;
+    
+}
+nav a:link {
+    text-decoration: none;
+  }
+  
+nav  a:visited {
+    text-decoration: none;
+  }
+  
+nav  a:hover {
+    text-decoration: none;    
+    color:#0065FC;
+  }
+  
+ nav a:active {
+    text-decoration: none;
+  }
+nav .navInscription {
+    color:#0065FC;
+    position:absolute;
+    top:0.1em;
+    right:1em;  
+}
+
+.navMenu{
+    display: flex;
+    
+}
+
+.navItem {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 5em;
+    width: 90%;
+    
+}
+
+.navItem:hover{
+    border-top:#0065FC solid 0.1em;
+    
+}
