@@ -1,5 +1,14 @@
 *{color:red;}
 
+body{
+    display:flex;
+    flex-direction: column;
+    flex-wrap:wrap;
+    margin-left: 2em;
+    margin-right: 2em;
+    
+}
+
 /* Liste navigation */
 nav{
  
