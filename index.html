@@ -6,24 +6,33 @@
     <script src="https://kit.fontawesome.com/0ce2ea1d23.js" crossorigin="anonymous"></script>
     <meta charset="utf-8" />   
     <link rel="stylesheet" href="stylesheet.css" />
-    <link rel="stylesheet" href="stylesheetmobile.css" />
+    <link rel="stylesheet" media="screen and (max-width:600px)" href="stylesheetmobile.css" />
+    <!-- Faire fonctionner l'émulateur chrome/firefox -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
 </head>
-<body>
-    <header>
-        <div id="logo"><img src="images/logo/Reservia.svg"></div>
-        <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-        <h2>En plein centre ville ou en pleine nature</h2>
-    </header>
 
+<body>
+    
+    <header>
+        <div class="divHeader">
+            <div id="logo"><img src="images/logo/Reservia.svg"></div>
         <!-- Menu Navigation -->
-        <!-- Menu Navigation -->
-        <nav>
-           
-                <p class="navItem"><a href="#ancreHeb" />Hébergements</a></p>
-                <p class="navItem"><a href="#ancreAct" />Activités</a></p>
-                <p class="navItem">S'inscrire</p>
+            <!-- Menu Navigation --> 
+            <nav>
+                <div class="ancres">
+                    <p class="navAncre"><a href="#ancreHeb" />Hébergements</a></p>
+                    <p class="navAncre"><a href="#ancreAct" />Activités</a></p>
+                 </div>
+                <p class="navInscription">S'inscrire</p>
             
-        </nav>
+            </nav>
+        </div>    
+    </header>
+        <section>
+            <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+            <h2>En plein centre ville ou en pleine nature</h2>
+        </section>
+        
 
         <!-- Section Recherche -->
         <!-- Section Recherche -->
@@ -37,7 +46,7 @@
 
         <!-- Section Filtres -->
         <!-- Section Filtres -->
-        <br />
+        
         <section id="filtres">            
                 <p>Filtres</p>
                 <div class="filtre"></p><p class="filtrePic"><i class="fas fa-money-bill-wave"></p></i><p class="filtreTexte">Economique</p></div>
@@ -52,10 +61,10 @@
 <!-- BlOCK MID PAGE -->
 <!-- BlOCK MID PAGE -->
 <!-- BlOCK MID PAGE -->
-        <section class="hebergements">
-
+        <section class="principal">
+            <div class="hebergements">
             <div class="hebergements-block" id="ancreHeb">
-                <h3>Hébergements à Marseille</h3>
+                <h1 class="titre">Hébergements à Marseille</h1>
                 
                 <div id="infosHebergements">
                     
@@ -159,75 +168,83 @@
                     
                         
                     </div>
-                    <h3>Afficher plus</h3> 
+                    <h3 class="afficherPlus">Afficher plus</h3> 
                 </div>
                 
                 
             </div>
             <aside class="hebergementsPopulaire-block">
                 <div class="titrePop">
-                    <h3>Les plus populaire</h3> 
+                    <h1 class="titre">Les plus populaire</h1> 
                     <i class="fas fa-chart-line"></i> <!--icone--> 
                 </div>
-                <a href="">
-                <div class="texteHebergements">
+                <div class="contenuHebergementsPopulaire">
+                    <a href="">
+                    <div class="texteHebergements">
+                            
+                        <img src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Image hébergement" class="imgHebergements">
                         
-                    <img src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Image hébergement" class="imgHebergements">
-                    
-                    <div class="infoTexteHebergements">
-                        <h4>Hôtel Le soleil du matin</h4>
-                        <span>Nuit à partir de 128€</span>
-                        <div class="imgNotePop">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
+                        <div class="infoTexteHebergements">
+                            <div>   
+                                    <h4>Hôtel Le soleil du matin</h4>
+                                    <span>Nuit à partir de 128€</span>
+                            </div>
+                            <div class="imgNotePop">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
                         </div>
-                    </div>
-                </div></a>
-                <a href="">
-                <div class="texteHebergements">
+                    </div></a>
+                    <a href="">
+                    <div class="texteHebergements">
+                            
+                        <img src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Image hébergement" class="imgHebergements">
                         
-                    <img src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Image hébergement" class="imgHebergements">
-                    
-                    <div class="infoTexteHebergements">
-                        <h4>Hôtel chez Amina</h4>
-                        <span>Nuit à partir de <strong>96€</strong></span>
-                        <div class="imgNotePop">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
+                        <div class="infoTexteHebergements">
+                            <div>   
+                                <h4>Chez ta maman</h4>
+                                <span>Nuit à partir de 1€</span>
+                            </div>
+                            <div class="imgNotePop">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
                         </div>
-                    </div>
-                </div></a>
-                <a href="">
-                <div class="texteHebergements">
+                    </div></a>
+                    <a href="">
+                    <div class="texteHebergements">
+                            
+                        <img src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Image hébergement" class="imgHebergements">
                         
-                    <img src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Image hébergement" class="imgHebergements">
-                    
-                    <div class="infoTexteHebergements">
-                        <h4>Hôtel chez Amina</h4>
-                        <span>Nuit à partir de <strong>96€</strong></span>
-                        <div class="imgNotePop">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
+                        <div class="infoTexteHebergements">
+                            <div>   
+                                <h4>Hôtel Le soleil du matin</h4>
+                                <span>Nuit à partir de 128€</span>
+                            </div>
+                            <div class="imgNotePop">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
                         </div>
-                    </div>
-                </div></a>
-                
+                    </div></a>
+                </div>
             </aside>
+        </div>
         </section>
 
         <!-- Article activités -->
         <!-- Article activités -->
             <article class="activités">
-                <h3>Activités à Marseille</h3>
+                <h1 class="titre">Activités à Marseille</h1>
                 <div class="activités-block">
                     <div class="texteHebergementsHaut">
                     <a href="">   
@@ -310,5 +327,7 @@
             
           
         </footer>
+             
 </body>
+
 </html>

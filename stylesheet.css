@@ -17,21 +17,21 @@ body{
     display:flex;
     flex-direction: column;
     flex-wrap:wrap;
-    margin-left: 2em;
-    margin-right: 2em;
-    
+    margin: auto;
+    padding-top: 2em;
+    max-width: 1300px;
+    gap: 1rem;
+
 }
 
-header{
-    display:flex;
-    flex-direction: column;
-    width: 100%;
-    
-}
+
+
 
 /* Titres */
 h1{
     font-weight: bold;
+    font-weight:750;
+    font-size: 1.5rem;
 }
 
 h2{
@@ -39,15 +39,15 @@ h2{
     font-size: 1.2em;
 }
 
-h3{
-    margin:1em 1em 1em 1em;
 
+.titre{
+    margin:1rem;
+   
 }
 
 h4{
     font-weight: bold;
-    margin:0;
-    
+    margin:0em 0em 0em 0em;
     
 }
 /* enlève le modèle de base de balises <a> */
@@ -57,26 +57,28 @@ a, a:link,a:visited,a:hover{
     
 }
 
+/* HEADER */
+/* HEADER */
+.divHeader{
+    display:flex;
+    justify-content: space-between;
+}
 
 /* Liste navigation */
-nav{
- 
-    height: 5em;
-    width: 20em;
+/* Liste navigation */
+nav{    
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    font-weight: bold;
-    position:absolute;
-    top:0.1em;
-    right:1em;   
+    font-weight: bold;    
+    gap:1rem;
+    
     
 }
+
 nav a{    
     color:black;
-    
-    
+        
 }
+
 nav a:link {
     text-decoration: none;
   }
@@ -97,21 +99,21 @@ nav p {
     color:#0065FC;
     
 }
+/* 
+.navAncre {
+   
+    
+} */
 
-.navItem {
+.navAncre:hover{
+    border-top:#0065FC solid 0.1rem;
+    
+}
+
+.ancres{
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    height: 5em;
-    width: 90%;
-    
+    gap:1rem;
 }
-
-.navItem:hover{
-    border-top:#0065FC solid 0.1em;
-    
-}
-
 
 
 input[type=submit] {
@@ -141,12 +143,11 @@ input[type=search] {
 /* Table du champ de recherche */
 /* Table du champ de recherche */
 #champRecherche {
-    height: 2.5em;
-    width: 21em;
+    height: 2.5rem;
+    width: 21rem;
     border: #F2F2F2 solid 0.1em;
     border-radius: 0.8em;
     display:flex;
-    justify-content: space-around;
     align-items: center;
     overflow: hidden;
     
@@ -243,6 +244,12 @@ input[type=search] {
     margin-right: 0.5em;
 }
 
+/* MAIN */
+/* MAIN */
+.principal{
+    display:flex;
+    gap:2rem;
+}
 
 /* section Hebergement */
 /* section Hebergement */
@@ -250,6 +257,7 @@ input[type=search] {
     display:flex;
     flex-direction: row;
     justify-content: space-between;
+    
 }
 
 .hebergements-block{
@@ -261,31 +269,29 @@ input[type=search] {
     width: 100%;
 }
 
+
+
 #infosHebergements{
     display: flex;
     flex-direction: row; 
     flex-wrap: wrap;
     justify-content: center;
+    gap: 2rem;
+    margin-top: 1em;
 }
 
-.imgHebergements{    
-    height: 60%;
-    border-radius: 1em 1em 0em 0em;
-    width: 100%;
-}
 
-.texteHebergements{    
+.hebergements-block .texteHebergements{    
    display:flex;
    flex-direction: column;   
     background-color: white;
-    border-radius: 1em;
-    border: white solid 0.3em;
+    border-radius: 1rem;
+    border: white solid 0.1rem;
     box-shadow:  0 -3em 3em rgba(0,0,0,0.1),
              0 0  0 2px rgb(255,255,255),
-             0.3em 0.3em 1em rgba(0,0,0,0.3);
-    margin: 1em 1em 1em 1em;
-    width: 30em;
-    height: 30em;
+             0.3em 0.3em 1em rgba(0,0,0,0.3);    
+    width: 14rem;
+    height: 12rem;
 }
 
 .infoTexteHebergements{
@@ -293,18 +299,26 @@ input[type=search] {
     flex-direction: column;    
     margin-top: 0.5em;
     margin-left: 0.5em;
-    font-size: 1.5em;
+    font-size: 0.9rem;
    
 }
 
-/* .infoTexteHebergements span{
-     
+.imgHebergements{    
+    height: 7rem;
+    border-radius: 1rem 1rem 0em 0em;
+    width: 100%;
     
-} */
+}
+
+
+.hebergements-block .texteHebergements span {
+    padding-top: 0.8rem;
+}
+
 
 .imgNote{
     display:flex;
-     
+    font-size: 0.9rem;
 }
 
 /* Couleurs des étoiles de notation */
@@ -316,6 +330,11 @@ input[type=search] {
     color:#F2F2F2;
 }
 
+.afficherPlus{
+    margin: 2rem 0rem 1rem 1rem;
+    font-size: 1rem;
+    font-weight: 700;
+}
 
 /* Aside */
 /* Aside */
@@ -326,44 +345,64 @@ input[type=search] {
     align-items: center;
 }
 
+
 .hebergementsPopulaire-block{
+    display: flex;
+    flex-direction: column;
     background-color:#F2F2F2;    
     border-radius: 1em;
-    padding: 1em 1em 1em 1em; 
-    margin-left: 2em;  
-    width: 33%
+    padding: 1em 1em 1em 1em;   
+    width: 50%; 
+
+}
+
+.contenuHebergementsPopulaire{
+    display: flex;
+    flex-direction: column;
+    gap:2rem;
+    margin: 1rem 2rem 0rem 2rem;
 }
 aside .texteHebergements{
     display:flex;
-    flex-direction: row;    
-    margin: 2em 2em 2em 2em;
-    width: 90%;
-    height: 27%;
+    flex-direction: row;          
+    background-color: white;
+    border-radius: 1em;
+    border: white solid 0.1em;
+    box-shadow:  0 -3em 3em rgba(0,0,0,0.1),
+             0 0  0 2px rgb(255,255,255),
+             0.3em 0.3em 1em rgba(0,0,0,0.3);
+    
 }
 
 
 
 aside .texteHebergements img{
     border-radius: 1em 0em 0em 1em;
-    height: 100%;
-    width: 50%;
+    height: 8rem;
+    width: 7rem;
+    
 }
 
 
 aside .infoTexteHebergements{
     display:flex;    
     flex-direction: column;
-    
+    justify-content: space-between;
+    margin: 0.8rem;
 }
 
 /* aside .infoTexteHebergements span{
     
 } */
 
-.imgNotePop{
-    padding-top: 7em;
+.imgNotePop{    
     display: flex;    
     color:#0065FC;
+    
+}
+
+.fa-chart-line{
+    font-size: 1.5em;
 }
     
 /* Block activités */
@@ -383,8 +422,14 @@ aside .infoTexteHebergements{
 
 .activités .texteHebergements{
     display: flex;     
-    height: 15em;
-    width: 20em;
+    
+    background-color: white;
+    border-radius: 1em;
+    border: white solid 0.3em;
+    box-shadow:  0 -3em 3em rgba(0,0,0,0.1),
+             0 0  0 2px rgb(255,255,255),
+             0.3em 0.3em 1em rgba(0,0,0,0.3);
+    margin: 1em 1em 1em 1em;
 }
 
 .activités .texteHebergements img{
@@ -409,9 +454,7 @@ aside .infoTexteHebergements{
    padding-top: 2em;
 }
 
-.texteHebergements span {
-    padding-top: 1em;
-}
+
 
 .texteHebergementsHaut img {
     height:25em;
