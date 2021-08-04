@@ -229,14 +229,17 @@ input[type=search] {
 
 
 
+
+
+/* Section bulle INFO */
+/* Section bulle INFO */
+/* Section bulle INFO */
 #infoBulle{
     display:flex;
     align-items: center;     
      
     
 }
-
-/* Section bulle INFO */
 .infoPic{
     display:flex;
     justify-content: center;    
@@ -438,7 +441,6 @@ aside .infoTexteHebergements{
     gap:3rem;
         
 }
-
 
 
 .texteHebergementsPetit{

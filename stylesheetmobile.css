@@ -2,58 +2,240 @@ body{
     display:flex;
     flex-direction: column;   
     flex-wrap: wrap;
-    max-width: 400px;
-    width: 400px;
+    max-width: 420px;
+    width: 420px;
     gap: 1rem;
-    
-
+   
 }
+
+/* Suppression des effets de survol */
+/* Suppression des effets de survol */
+/* Suppression des effets de survol */
+.texteHebergements:hover{
+    transform: none;
+}
+.texteHebergementsHaut:hover{
+    transform: none;
+}
+
+.navAncre:hover{
+    border-top:none;
+    
+}
+.itemRecherche:nth-child(1):hover{
+    transform: none;
+}
+.filtre:hover{
+    background-color:none;
+}
+/* Suppression des effets de survol */
+/* Suppression des effets de survol */
+/* Suppression des effets de survol */
+
 
 .divHeader{
     display:flex;
     flex-direction: column;
     flex-wrap: wrap;
+    margin-left:1rem;
+    width: auto;
 }
 
-.ancres{
-   
-    width: 100%;
+#filtres{
+    width: auto;
 }
 
-.logo{
-    
-    
+
+
+#infoBulle{
+    width: auto;
 }
+
 
 .navInscription {
     
     color:#0065FC;
 }
 
+.titresPage{
+    margin-left:1rem;
+   
+}
+
 #filtres{
-    
+    margin:1rem;
     flex-wrap: wrap;
     gap: 1rem;
 }
-
+#champRecherche{
+    margin:auto;
+   
+}
 .principal{
     display:flex;
     flex-direction: column;
-    
+    width: auto;
 }
 
+/* Hébergements à Marseille */
+/* Hébergements à Marseille */
+/* Hébergements à Marseille */
 .infosHebergements{
     display:flex;
     flex-direction: column;
- 
 }
 
-.activités-block{
-    display:flex;
-    flex-direction: column;
+.hebergements-block{
+    background-color: unset;
 }
+
+.hebergements-block .texteHebergements {
+    
+    width: 100%;
+   
+}
+
+/* Cacher 3 dernières divs pour mobile */
+/* Cacher 3 dernières divs pour mobile */
+
+.texteHebergements:nth-child(4) {    
+    display: none;
+}
+.texteHebergements:nth-child(5) {    
+    display: none;
+}
+.texteHebergements:nth-child(6) {    
+    display: none;
+}
+
+/* Les plus populaire */
+/* Les plus populaire */
+/* Les plus populaire */
+
+
+.hebergementsPopulaire-block{
+    
+    order: -1;
+    border-radius: 0rem;
+    width: auto;
+    padding-bottom: 2rem;
+}
+.titrePop{
+    width: auto;
+}
+
+/* Activités à Marseille */
+/* Activités à Marseille */
+/* Activités à Marseille */
+
+
+.activités{
+    width: auto;
+    
+ }
+ .activités h1{
+    margin-left: 1rem;
+}
+.activités-block{
+    display: flex;
+    flex-direction: column; 
+    width: 90%;
+    margin:auto;
+}
+
+
+ 
+ .texteHebergementsPetit{
+     display: flex;
+     flex-direction: column;
+     width: 100%;
+ }
+ 
+ .texteHebergementsPetit .infoTexteHebergements{
+    display:flex;
+    flex-direction: column;    
+    
+ }
+ 
+ .activités .texteHebergements{
+    display:flex;
+   flex-direction: column;   
+    
+    
+    
+     
+ }
+ 
+ .activités .texteHebergements img{
+    height: 7rem;
+    border-radius: 1rem 1rem 0em 0em;
+    width: 100%;
+     
+ }
+ 
+ 
+ .texteHebergementsHaut{
+    display:flex;
+    flex-direction: column;   
+     width: 100%;
+        
+ }
+ 
+ .texteHebergementsHaut .infoTexteHebergements{
+    display:flex;
+    flex-direction: column;    
+    width: 100%;
+ }
+ 
+ 
+ 
+ 
+ 
+ .texteHebergementsHaut img {
+    height: 7rem;
+    border-radius: 1rem 1rem 0em 0em;
+    width: 100%;
+     
+ }
+
+ .texteHebergementsPetit{
+    display:flex;
+    flex-direction: column;     
+     width: 100%;
+}
+
+.texteHebergementsPetit .infoTexteHebergements{
+    display:flex;
+    flex-direction: column;    
+  
+}
+
 
 footer{
+    
     display:flex;
     flex-direction: column;
+    width: auto;
+    justify-content: flex-start;
+    margin-top: 1rem;
+    padding-top: 2rem;
+}
+
+
+
+.blockFooter{
+    display:flex;
+    flex-direction: column;  
+    justify-content: flex-start;  
+    align-items: flex-start;
+    margin: 0rem;
+    
+}
+
+.blockFooter ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap:0.5rem;
+    
 }
