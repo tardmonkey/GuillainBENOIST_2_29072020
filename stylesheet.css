@@ -160,7 +160,11 @@ input[type=search] {
     background-color: #F2F2F2;
     justify-content: center;
     align-items: center;    
-   
+    cursor:pointer;
+}
+
+.itemRecherche:nth-child(1):hover{
+    transform: scale(1.1);
 }
 .itemRecherche:nth-child(2){
     display:flex;    
@@ -174,6 +178,7 @@ input[type=search] {
     justify-content: center;
     align-items: center;    
     padding: 0.5em 0.5em 0.5em 0.5em;
+    cursor:pointer;
 }
 
 
@@ -196,7 +201,12 @@ input[type=search] {
     border-radius:10em;
     align-items: center;
     height: 2.7em;
-    
+    transition:background-color 0.3s linear; 
+}
+
+/* changer couleur menu au passage souris  */
+.filtre:hover{
+    background-color:#F2F2F2;
 }
 
 .filtrePic{
@@ -217,10 +227,7 @@ input[type=search] {
     margin-left: 0.5em;
 }
 
-/* changer couleur menu au passage souris  */
-.filtre:hover{
-    background-color:#F2F2F2;
-}
+
 
 #infoBulle{
     display:flex;
@@ -268,7 +275,9 @@ input[type=search] {
 }
 
 
-
+/* Hébergements à Marseille */
+/* Hébergements à Marseille */
+/* Hébergements à Marseille */
 #infosHebergements{
     display: flex;
     flex-direction: row; 
@@ -276,18 +285,32 @@ input[type=search] {
     justify-content: center;
     gap: 2rem;
     margin-top: 1em;
+    
 }
 
 
 .hebergements-block .texteHebergements{    
    display:flex;
    flex-direction: column;   
+    
     background-color: white;
     border-radius: 1rem;
     border: white solid 0.1rem;
     box-shadow: 0.3em 0.3em 1em rgba(0,0,0,0.3);   
     width: 14rem;
     height: 12rem;
+    
+}
+
+/* Effet d'aggrandissement au survol souris */
+/* Effet d'aggrandissement au survol souris */
+.texteHebergements:hover{
+    transform: scale(1.1);
+    transition: ease 0.2s;
+}
+.texteHebergementsHaut:hover{
+    transform: scale(1.1);
+    transition: ease 0.2s;
 }
 
 .infoTexteHebergements{
@@ -299,12 +322,14 @@ input[type=search] {
    
 }
 
+
 .imgHebergements{    
     height: 7rem;
     border-radius: 1rem 1rem 0em 0em;
     width: 100%;
     
 }
+
 
 
 .hebergements-block .texteHebergements span {
