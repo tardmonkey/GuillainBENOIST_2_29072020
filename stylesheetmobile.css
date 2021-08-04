@@ -1,7 +1,59 @@
-/* body{
+body{
     display:flex;
-    flex-direction: column;    
+    flex-direction: column;   
+    flex-wrap: wrap;
     max-width: 400px;
     width: 400px;
     gap: 1rem;
-} */
+    
+
+}
+
+.divHeader{
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.ancres{
+   
+    width: 100%;
+}
+
+.logo{
+    
+    
+}
+
+.navInscription {
+    
+    color:#0065FC;
+}
+
+#filtres{
+    
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.principal{
+    display:flex;
+    flex-direction: column;
+    
+}
+
+.infosHebergements{
+    display:flex;
+    flex-direction: column;
+ 
+}
+
+.activités-block{
+    display:flex;
+    flex-direction: column;
+}
+
+footer{
+    display:flex;
+    flex-direction: column;
+}
