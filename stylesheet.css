@@ -66,6 +66,7 @@ a, a:link,a:visited,a:hover{
 /* Liste navigation */
 nav{    
     display: flex;
+    align-items: center;
     font-weight: bold;    
     gap:1rem;
     
@@ -93,7 +94,7 @@ nav  a:hover {
  nav a:active {
     text-decoration: none;
   }
-nav p {
+nav span {
     color:#0065FC;
     
 }
@@ -131,6 +132,34 @@ input[type=search] {
     font-size: 100%;
     
   }
+/* TESTS */
+/* TESTS */
+/* TESTS */
+.texteHebergements{
+    width: 15rem;
+    height: 15rem;
+    transition: width 2s, height 2s, transform 1s;
+    
+    
+  }
+  
+.texteHebergements:hover{
+    /* background-image: url(/images/nonapprouvé/explosion.gif);
+    background-size: 18rem; */
+    width: 20rem;
+    height: 20rem;
+    transform: rotate(700deg);
+    background-image: url(/images/nonapprouvé/explosion.gif);
+   
+}
+
+/* TESTS */
+/* TESTS */
+/* TESTS */
+
+
+
+
 
 #bouttonRecherche{
     color:white;
@@ -222,7 +251,7 @@ input[type=search] {
     background-color:#F2F2F2;
 }
 
-#infoBulle{
+.infoBulle{
     display:flex;
     align-items: center;     
      
@@ -269,7 +298,7 @@ input[type=search] {
 
 
 
-#infosHebergements{
+.infosHebergements{
     display: flex;
     flex-direction: row; 
     flex-wrap: wrap;
