@@ -42,10 +42,22 @@ body{
 }
 
 #filtres{
-    width: auto;
+    width: auto;    
+    display: flex;               
+    align-items: flex-start;      
+    flex-direction: row;
+   
 }
 
+.filtre {
+    margin: 0.4rem;
+    
+}
 
+.toutFiltres{
+    display:flex;
+    flex-wrap: wrap;
+}
 
 #infoBulle{
     width: auto;
