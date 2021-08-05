@@ -4,7 +4,6 @@
     <meta charset="utf-8">
     <title>Reservia - trouvez votre hébergement pour des vacances de rêve</title>
     <script src="https://kit.fontawesome.com/0ce2ea1d23.js" crossorigin="anonymous"></script>
-    <meta charset="utf-8" />   
     <link rel="stylesheet" href="stylesheet.css" />
     <link rel="stylesheet" media="screen and (max-width:600px)" href="stylesheetmobile.css" />
     <!-- Faire fonctionner l'émulateur chrome/firefox -->
@@ -15,15 +14,15 @@
     
     <header>
         <div class="divHeader">
-            <div id="logo"><img src="images/logo/Reservia.svg"></div>
+            <div id="logo"><img src="images/logo/Reservia.svg" alt="Logo Rservia"></div>
         <!-- Menu Navigation -->
             <!-- Menu Navigation --> 
             <nav>
                 <div class="ancres">
-                    <p class="navAncre"><a href="#ancreHeb" />Hébergements</a></p>
-                    <p class="navAncre"><a href="#ancreAct" />Activités</a></p>
+                    <span class="navAncre"><a href="#ancreHeb" >Hébergements</a></span>
+                    <span class="navAncre"><a href="#ancreAct" >Activités</a></span>
                  </div>
-                <p class="navInscription">S'inscrire</p>
+                <span class="navInscription">S'inscrire</span>
             
             </nav>
         </div>    
@@ -39,7 +38,7 @@
         <section id="champRecherche">
            
                 <p class="itemRecherche"><i class="fas fa-map-marker-alt"></i></p>
-                <p class="itemRecherche"><input type="search" method="post" action="" name="champRecherche" id="recherche" value="Marseille, France"/></p>
+                <p class="itemRecherche"><input type="search" name="champRecherche" id="recherche" value="Marseille, France"/></p>
                 <p class="itemRecherche"><input type="submit" value="Rechercher" id="bouttonRecherche"></p>    
 
         </section>
@@ -50,10 +49,10 @@
         <section id="filtres">            
                 <span>Filtres</span>
                 <div class="toutFiltres">
-                    <div class="filtre"></p><p class="filtrePic"><i class="fas fa-money-bill-wave"></p></i><p class="filtreTexte">Economique</p></div>
+                    <div class="filtre"><p class="filtrePic"><i class="fas fa-money-bill-wave"></p></i><p class="filtreTexte">Economique</p></div>
                     <div class="filtre"><p class="filtrePic"><i class="fas fa-child"></p></i><p class="filtreTexte">Familial</p></div>
-                    <div class="filtre"></p><p class="filtrePic"><i class="fas fa-heart"></p></i><p class="filtreTexte">Romantique</p></div>
-                    <div class="filtre"></p><p class="filtrePic"><i class="fas fa-dog"></p></i><p class="filtreTexte">Animaux autorisés</p></div>      
+                    <div class="filtre"><p class="filtrePic"><i class="fas fa-heart"></p></i><p class="filtreTexte">Romantique</p></div>
+                    <div class="filtre"><p class="filtrePic"><i class="fas fa-dog"></p></i><p class="filtreTexte">Animaux autorisés</p></div>      
                 </div>          
         </section>
         <section id="infoBulle">

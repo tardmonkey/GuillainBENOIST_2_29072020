@@ -41,6 +41,35 @@ body{
     width: auto;
 }
 
+nav {
+    display:flex;
+    flex-direction: column;
+}
+
+.ancres{
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    font-weight: 400;
+    border-bottom: #F2F2F2 solid 0.2rem;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.navAncre:nth-child(1){
+    border-bottom: #0065FC solid 0.2rem;
+    
+}
+.ancres:active{
+    border-bottom: #0065FC solid 0.2rem;
+}
+
+.navInscription {
+    order:-1;
+   
+}
+
+
 #filtres{
     width: auto;    
     display: flex;               
@@ -61,13 +90,10 @@ body{
 
 #infoBulle{
     width: auto;
+    margin: 1rem;
 }
 
 
-.navInscription {
-    
-    color:#0065FC;
-}
 
 .titresPage{
     margin-left:1rem;
