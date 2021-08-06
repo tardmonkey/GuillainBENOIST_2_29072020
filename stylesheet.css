@@ -18,7 +18,7 @@ body{
     flex-direction: column;
     flex-wrap:wrap;
     margin: auto;
-    padding-top: 2em;
+    
     max-width: 1300px;
     gap: 1rem;
 
@@ -60,6 +60,11 @@ a, a:link,a:visited,a:hover{
 .divHeader{
     display:flex;
     justify-content: space-between;
+   
+}
+
+.logo{
+    padding-top: 2em;
 }
 
 /* Liste navigation */
@@ -94,25 +99,60 @@ nav  a:hover {
  nav a:active {
     text-decoration: none;
   }
-nav span {
-    color:#0065FC;
+
+
+.navInscription{
     
+    color:#0065FC;
 }
 /* 
-.navAncre {
-   
-    
-} */
+.navInscription:hover{
+    border-top:#0065FC solid 0.2rem;
+}
+
 
 .navAncre:hover{
-    border-top:#0065FC solid 0.1rem;
+    border-top:#0065FC solid 0.2rem;
     
-}
+} */
 
 .ancres{
     display: flex;
     gap:1rem;
+    
 }
+
+.listeNav{
+    list-style: none;
+    display: flex;
+    gap:1rem;
+    /* Overide le css de base */
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0px;
+    height: 100%;
+}
+
+.listeNav li{
+    padding-top: 3rem;
+    border-top:transparent solid 0.1rem;
+    
+   
+}
+.listeNav li:hover{
+    
+    border-top:#0065FC solid 0.1rem;
+   
+}
+.listeNav li:active{
+    
+    border-top:#0065FC solid 0.1rem;
+   
+}
+
+
 
 
 input[type=submit] {
