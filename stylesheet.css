@@ -118,14 +118,14 @@ nav  a:hover {
 
 .ancres{
     display: flex;
-    gap:1rem;
+    
     
 }
 
 .listeNav{
     list-style: none;
     display: flex;
-    gap:1rem;
+    
     /* Overide le css de base */
     margin-block-start: 0em;
     margin-block-end: 0em;
@@ -137,6 +137,8 @@ nav  a:hover {
 
 .listeNav li{
     padding-top: 3rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
     border-top:transparent solid 0.1rem;
     
    
@@ -146,11 +148,7 @@ nav  a:hover {
     border-top:#0065FC solid 0.1rem;
    
 }
-.listeNav li:active{
-    
-    border-top:#0065FC solid 0.1rem;
-   
-}
+
 
 
 

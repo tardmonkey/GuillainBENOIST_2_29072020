@@ -8,6 +8,11 @@ body{
    
 }
 
+.listeNav li:hover{
+    
+    border-top:none;
+   
+}
 /* Suppression des effets de survol */
 /* Suppression des effets de survol */
 /* Suppression des effets de survol */
