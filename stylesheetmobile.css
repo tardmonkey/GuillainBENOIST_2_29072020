@@ -86,7 +86,12 @@ nav {
 }
 
 .navAncre:nth-child(1){
+    padding-bottom: 1rem;
     border-bottom: #0065FC solid 0.2rem;
+    
+}
+.navAncre:nth-child(1) a{
+    color: #0065FC;
     
 }
 
@@ -143,18 +148,27 @@ nav {
 }
 #champRecherche{
     margin:auto;
-    width: auto;
+    width: 20rem;
+    overflow: visible;
+    border-right:none;
+    border-left:none;
 }
 
 .itemRecherche:nth-child(1){
-    width: 2rem;
+    padding:1rem;
+    width: 4rem;
+    height:2.5rem;
+    border-radius: 1rem 0rem 0rem 1rem;
+    
 }
 .itemRecherche:nth-child(2){
     width: 100%;
+   
 }
 
 .itemRecherche:nth-child(3){
     display:none;
+    
 }
 
 .itemRecherche:nth-child(4){
@@ -163,9 +177,10 @@ nav {
     align-items: center;
     color:white;
     background-color: #0065FC;
-    height: 100%;
-    width: 3rem;
+    width: 4rem;
+    height:2.7rem;
     border-radius: 1rem;
+    
 }
 
 #bouttonRecherche-mobile{
