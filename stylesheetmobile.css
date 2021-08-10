@@ -1,21 +1,31 @@
 body{
+    margin:0;
+}
+
+h1, h2{
+    margin: 1rem;
+}
+
+.pageBody{
     display:flex;
     flex-direction: column;   
     flex-wrap: wrap;
     max-width: 420px;
     width: 420px;
     gap: 1rem;
-   
+    margin:1rem 0rem 0rem 0rem;
+    
 }
 
+/* Suppression des effets de survol */
+/* Suppression des effets de survol */
+/* Suppression des effets de survol */
 .listeNav li:hover{
     
     border-top:none;
    
 }
-/* Suppression des effets de survol */
-/* Suppression des effets de survol */
-/* Suppression des effets de survol */
+
 .texteHebergements:hover{
     transform: none;
 }
@@ -42,25 +52,39 @@ body{
     display:flex;
     flex-direction: column;
     flex-wrap: wrap;
-    margin-left:1rem;
-    width: auto;
+    
 }
-
+.logo{
+    margin-left:1rem;
+    padding:0;
+}
 nav {
+    margin-top:1rem;
     display:flex;
     flex-direction: column;
+    align-items:flex-start;
+    
 }
 
-.ancres{
-    display: flex;
-    justify-content: center;
-    gap: 5rem;
-    font-weight: 400;
-    border-bottom: #F2F2F2 solid 0.2rem;
-    width: 100%;
-    margin: 0;
-    padding: 0;
+.listeNav li{    
+    padding-top: 1rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    border-top:none; 
+   
 }
+
+
+.navInscription{
+    position:absolute;
+    top: 1rem;
+    right:0rem;
+    padding-top: 0rem;
+    padding-left: 0rem;
+    padding-right: 0rem;
+
+}
+
 .navAncre:nth-child(1){
     border-bottom: #0065FC solid 0.2rem;
     
@@ -98,10 +122,15 @@ nav {
     margin: 1rem;
 }
 
-
+.titre{
+    margin:0rem;
+    padding-bottom:1rem;
+    
+}
 
 .titresPage{
-    margin-left:1rem;
+    margin:auto;
+    padding:auto;
    
 }
 
@@ -112,8 +141,49 @@ nav {
 }
 #champRecherche{
     margin:auto;
-   
+    width: auto;
 }
+
+.itemRecherche:nth-child(1){
+    width: 2rem;
+}
+.itemRecherche:nth-child(2){
+    width: 100%;
+}
+
+.itemRecherche:nth-child(3){
+    display:none;
+}
+
+.itemRecherche:nth-child(4){
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    background-color: #0065FC;
+    height: 100%;
+    width: 3rem;
+    border-radius: 1rem;
+}
+
+#bouttonRecherche-mobile{
+    display: flex;
+    height: 100%;    
+    background-color:#0065FC;
+    justify-content: center;
+    align-items: center;    
+    
+    cursor:pointer;
+    color:white;
+    background-color: #0065FC;
+}
+
+
+
+
+
+
+
 .principal{
     display:flex;
     flex-direction: column;
@@ -163,9 +233,12 @@ nav {
     width: auto;
     padding-bottom: 2rem;
 }
-.titrePop{
-    width: auto;
+
+.hebergementsPopulaire-block h3{
+    margin-left:1rem;
+    
 }
+
 
 /* Activités à Marseille */
 /* Activités à Marseille */
@@ -176,8 +249,9 @@ nav {
     width: auto;
     
  }
- .activités h1{
-    margin-left: 1rem;
+
+.activités h3{
+ margin-left:1.5rem;
 }
 .activités-block{
     display: flex;
@@ -262,6 +336,7 @@ footer{
     justify-content: flex-start;
     margin-top: 1rem;
     padding-top: 2rem;
+    gap:0;
 }
 
 

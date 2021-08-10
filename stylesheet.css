@@ -11,19 +11,24 @@ img {
 
 *{
     font-family: "Raleway";
+    box-sizing: border-box;
     
 }
-body{
+.pageBody{
     display:flex;
     flex-direction: column;
     flex-wrap:wrap;
     margin: auto;
-    
+    margin-top:-0.5rem;
     max-width: 1300px;
     gap: 1rem;
 
 }
-
+a{
+    font-style: none;
+    text-decoration: none;
+    color:black
+}
 
 /* Titres */
 h1{
@@ -54,11 +59,7 @@ h4{
     
 }
 /* enlève le modèle de base de balises <a> */
-a, a:link,a:visited,a:hover{    
-    color:black;
-    text-decoration: none;
-    
-}
+
 
 /* HEADER */
 /* HEADER */
@@ -83,44 +84,10 @@ nav{
     
 }
 
-nav a{    
-    color:black;
-        
-}
-
-nav a:link {
-    text-decoration: none;
-  }
-  
-nav  a:visited {
-    text-decoration: none;
-  }
-  
-nav  a:hover {
-    text-decoration: none;    
+.navInscription a{
     color:#0065FC;
-  }
-  
- nav a:active {
     text-decoration: none;
-  }
-
-
-.navInscription{
-    
-    color:#0065FC;
 }
-/* 
-.navInscription:hover{
-    border-top:#0065FC solid 0.2rem;
-}
-
-
-.navAncre:hover{
-    border-top:#0065FC solid 0.2rem;
-    
-} */
-
 
 
 .listeNav{
@@ -140,10 +107,18 @@ nav  a:hover {
     padding-top: 3rem;
     padding-left: 2rem;
     padding-right: 2rem;
-    border-top:transparent solid 0.1rem;
-    
+    border-top:transparent solid 0.1rem; 
    
 }
+
+.navAncre a{
+    color:black;
+    text-decoration: none;
+}
+.navAncre a:hover{
+    color:#0065FC;
+}
+
 .listeNav li:hover{
     
     border-top:#0065FC solid 0.1rem;
@@ -173,8 +148,7 @@ input[type=search] {
   }
 
 #bouttonRecherche{
-    color:white;
-    background-color: #0065FC;
+    
     
 }
 
@@ -211,17 +185,23 @@ input[type=search] {
     padding-left: 0.5em;
     
 }
-.itemRecherche:nth-child(3){
+
+.itemRecherche:nth-child(4){
+    display:none;
+}
+
+#bouttonRecherche{
     display: flex;
     height: 100%;    
     background-color:#0065FC;
     justify-content: center;
     align-items: center;    
-    padding: 0.5em 0.5em 0.5em 0.5em;
+    padding: 1rem;
     cursor:pointer;
+    color:white;
+    background-color: #0065FC;
+   
 }
-
-
 /* FILTRES */
 /* FILTRES */
 
@@ -241,10 +221,10 @@ input[type=search] {
     margin-right: 1em;
     margin-left: 1em;
     display:flex;
-    border:#DEEBFF solid 0.2em;
+    border:#DEEBFF solid 0.3em;
     border-radius:10em;
     align-items: center;
-    height: 2.7em;
+    height: 2.9em;
     transition:background-color 0.3s linear; 
 }
 
@@ -261,7 +241,8 @@ input[type=search] {
     background-color:#DEEBFF;
     color:#0065FC;
     justify-content: center;
-    align-items: center;        
+    align-items: center;     
+    
 }
 
 
@@ -344,7 +325,7 @@ input[type=search] {
     border-radius: 1rem;
     border: white solid 0.1rem;
     box-shadow: 0.3em 0.3em 1em rgba(0,0,0,0.3);   
-    width: 14rem;
+    width: 16.5rem;
     height: 12rem;
     
 }
@@ -428,7 +409,7 @@ input[type=search] {
     display: flex;
     flex-direction: column;
     gap:2rem;
-    margin: 1rem 2rem 0rem 2rem;
+    margin: 1rem 0.2rem 0rem 0.5rem;
 }
 aside .texteHebergements{
     display:flex;
@@ -539,25 +520,31 @@ aside .infoTexteHebergements{
 footer {
     display: flex;
     background-color:#F2F2F2 ;
-    justify-content: space-around;
-    margin-top: 2rem;
-    padding-top: 2rem;
-   
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin:auto;
+    width: 75%;
+    margin-top:4rem;
+   gap:13rem;
 }
 
 .blockFooter{
     display:flex;
-    flex-direction: column;  
-    justify-content: space-between;  
+    flex-direction: column;    
     align-items: flex-start;
-    margin: 2rem 2rem 3rem 2rem;
+    margin: 2rem 2rem 3rem 1rem;
     
 }
 
 .blockFooter ul{
+
     list-style: none;
     display: flex;
     flex-direction: column;
     gap:0.5rem;
     
+}
+
+.blockFooter h4{
+    margin-bottom: 0.5rem;
 }
