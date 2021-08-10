@@ -1,0 +1,196 @@
+.pageBody{
+    
+    display:flex;
+    flex-direction: column;
+    flex-wrap:wrap;
+    margin: auto;
+    margin-top:-0.5rem;
+    width: 750px;
+    max-width:750px;
+    gap: 1rem;
+
+}
+
+.principal{
+    flex-direction: column;
+    width: 100%;
+    
+}
+
+.divHeader{
+    justify-content: flex-start;
+    gap:14rem;
+}
+
+.filtre{
+    margin-left: 0rem;
+}
+/* HEBERGEMENTS */
+/* HEBERGEMENTS */
+/* HEBERGEMENTS */
+.hebergements-block .texteHebergements{
+    width: 20rem;
+    height: 12rem;
+}
+
+
+
+/* POPULAIRE */
+/* POPULAIRE */
+/* POPULAIRE */
+/* POPULAIRE */
+.hebergementsPopulaire-block{
+    width:auto;
+    
+}
+
+.contenuHebergementsPopulaire{
+    align-items:center;
+    
+}
+
+aside .texteHebergements img {
+    
+    height: 8rem;
+    width: 20rem;
+}
+
+.hebergementsPopulaire-block .texteHebergements{
+    width:40rem;
+    
+}
+
+
+
+/* BLOCK ACTIVITES */
+/* BLOCK ACTIVITES */
+/* BLOCK ACTIVITES */
+/* BLOCK ACTIVITES */
+/* BLOCK ACTIVITES */
+.activités{
+    width: auto;
+    
+ }
+
+.activités h3{
+ margin-left:1.5rem;
+}
+.activités-block{
+    display: flex;
+    flex-direction: column; 
+    width: 90%;
+    margin:auto;
+}
+
+
+ 
+ .texteHebergementsPetit{
+     display: flex;
+     flex-direction: column;
+     width: 100%;
+ }
+ 
+ .texteHebergementsPetit .infoTexteHebergements{
+    display:flex;
+    flex-direction: column;    
+    
+ }
+ 
+ .activités .texteHebergements{
+    display:flex;
+   flex-direction: column;   
+    
+    
+    
+     
+ }
+ 
+ .activités .texteHebergements img{
+    height: 8rem;
+    border-radius: 1rem 1rem 0em 0em;
+    width: 20rem;
+     
+ }
+ 
+ 
+ .texteHebergementsHaut{
+    display:flex;
+    flex-direction: column;   
+     width: 100%;
+        
+ }
+ 
+ .texteHebergementsHaut .infoTexteHebergements{
+    display:flex;
+    flex-direction: column;    
+    width: 100%;
+ }
+ 
+ 
+ 
+ 
+ 
+ .texteHebergementsHaut img {
+    height: 7rem;
+    border-radius: 1rem 1rem 0em 0em;
+    width: 100%;
+     
+ }
+
+ .texteHebergementsPetit{
+    display:flex;
+    flex-direction: row;     
+     width: 100%;
+     gap:2rem;
+     
+}
+
+.texteHebergementsPetit .texteHebergements{
+    display:flex;
+    flex-direction: column;    
+    width: 20rem;
+  
+}
+
+
+
+
+footer {
+    display: flex;
+    background-color:#F2F2F2 ;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin:auto;
+    width: auto;
+    margin-top:4rem;
+   gap:5rem;
+}
+/* Suppression des effets de survol */
+/* Suppression des effets de survol */
+/* Suppression des effets de survol */
+.listeNav li:hover{
+    
+    border-top:none;
+   
+}
+
+.texteHebergements:hover{
+    transform: none;
+}
+.texteHebergementsHaut:hover{
+    transform: none;
+}
+
+.navAncre:hover{
+    border-top:none;
+    
+}
+.itemRecherche:nth-child(1):hover{
+    transform: none;
+}
+.filtre:hover{
+    background-color:none;
+}
+/* Suppression des effets de survol */
+/* Suppression des effets de survol */
+/* Suppression des effets de survol */

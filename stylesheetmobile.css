@@ -62,14 +62,14 @@ nav {
     margin-top:1rem;
     display:flex;
     flex-direction: column;
-    align-items:flex-start;
+    align-items:center;
     
 }
 
 .listeNav li{    
     padding-top: 1rem;
-    padding-left: 3rem;
-    padding-right: 3rem;
+    padding-left: 3.7rem;
+    padding-right: 3.9rem;
     border-top:none; 
    
 }
@@ -89,8 +89,10 @@ nav {
     border-bottom: #0065FC solid 0.2rem;
     
 }
-.ancres:active{
-    border-bottom: #0065FC solid 0.2rem;
+
+.navAncre:nth-child(2){
+    border-bottom: #F2F2F2 solid 0.2rem;
+    
 }
 
 .navInscription {
@@ -123,8 +125,8 @@ nav {
 }
 
 .titre{
-    margin:0rem;
-    padding-bottom:1rem;
+    margin:1rem;
+    
     
 }
 
@@ -234,10 +236,7 @@ nav {
     padding-bottom: 2rem;
 }
 
-.hebergementsPopulaire-block h3{
-    margin-left:1rem;
-    
-}
+
 
 
 /* Activités à Marseille */
