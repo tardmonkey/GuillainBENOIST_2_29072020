@@ -221,7 +221,9 @@ input[type=search] {
     margin-right: 1em;
     margin-left: 1em;
     display:flex;
-    border:#DEEBFF solid 0.3em;
+    border-bottom:#DEEBFF solid 0.3em;
+    border-top: #DEEBFF solid 0.3em;
+    border-right: #DEEBFF solid 0.3em;
     border-radius:10em;
     align-items: center;
     height: 2.9em;
@@ -235,8 +237,8 @@ input[type=search] {
 
 .filtrePic{
     display: flex;    
-    height: 3em;    
-    width: 3em;
+    height: 2.8em;    
+    width: 2.8em;
     border-radius: 10em;
     background-color:#DEEBFF;
     color:#0065FC;
@@ -323,7 +325,7 @@ input[type=search] {
     
     background-color: white;
     border-radius: 1rem;
-    border: white solid 0.1rem;
+    border: white solid 0.2rem;
     box-shadow: 0.3em 0.3em 1em rgba(0,0,0,0.3);   
     width: 16.5rem;
     height: 12rem;
@@ -347,7 +349,7 @@ input[type=search] {
     margin-top: 0.5em;
     margin-left: 0.5em;
     font-size: 0.9rem;
-   
+    gap: 0.3rem;
 }
 
 
@@ -356,12 +358,6 @@ input[type=search] {
     border-radius: 1rem 1rem 0em 0em;
     width: 100%;
     
-}
-
-
-
-.hebergements-block .texteHebergements span {
-    padding-top: 0.8rem;
 }
 
 
@@ -416,7 +412,7 @@ aside .texteHebergements{
     flex-direction: row;          
     background-color: white;
     border-radius: 1em;
-    border: white solid 0.1em;
+    border: white solid 0.2em;
     box-shadow: 0.3em 0.3em 1em rgba(0,0,0,0.3);
     
 }
