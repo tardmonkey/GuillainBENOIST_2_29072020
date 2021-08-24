@@ -173,34 +173,25 @@ nav {
    
 }
 
-.itemRecherche:nth-child(3){
-    display:none;
-    
-}
 
-.itemRecherche:nth-child(4){
+
+.itemRecherche:nth-child(3) {
     display:flex;
     justify-content: center;
     align-items: center;
     color:white;
     background-color: #0065FC;
-    width: 20%;
-    height:2.7rem;
+    width: 4rem;
+    height:100%;
     border-radius: 1rem;
     
 }
-
-#bouttonRecherche-mobile{
-    display: flex;
-    height: 100%;    
-    background-color:#0065FC;
-    justify-content: center;
-    align-items: center;    
+.itemRecherche:nth-child(3) i{
+    display:inline-block;
     
-    cursor:pointer;
-    color:white;
-    background-color: #0065FC;
 }
+
+#bouttonRecherche{display:none;}
 
 
 

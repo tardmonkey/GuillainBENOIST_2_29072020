@@ -84,8 +84,7 @@ nav{
     align-items: center;
     font-weight: bold;    
     gap:1rem;
-    
-    
+        
 }
 
 .navInscription a{
@@ -162,6 +161,10 @@ input[type=search] {
 
 /* Objet à l'intérieur du champ recherche */
 /* Objet à l'intérieur du champ recherche */
+.itemRecherche svg{
+    height: 10rem;
+    width:10rem;
+}
 .itemRecherche:nth-child(1){
     display: flex;
     height: 100%;
@@ -184,7 +187,8 @@ input[type=search] {
     border-bottom: #F2F2F2 solid 1px;
 }
 
-.itemRecherche:nth-child(4){
+/* Cacher icone recherche */
+.itemRecherche:nth-child(3) i{
     display:none;
 }
 
@@ -201,6 +205,8 @@ input[type=search] {
     border-radius: 0rem 1rem 1rem 0rem;
    
 }
+
+
 /* FILTRES */
 /* FILTRES */
 
