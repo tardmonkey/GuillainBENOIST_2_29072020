@@ -187,7 +187,7 @@ nav {
     
 }
 .itemRecherche:nth-child(3) i{
-    display:inline-block;
+    display:flex;
     
 }
 
