@@ -14,6 +14,8 @@ img {
     box-sizing: border-box;
     
 }
+
+
 .pageBody{
     display:flex;
     flex-direction: column;
@@ -55,7 +57,7 @@ h3{
 
 h4{
     font-weight: bold;
-    margin:0em 0em 0em 0em;
+    margin:0em;
     
 }
 /* enlève le modèle de base de balises <a> */
@@ -94,8 +96,7 @@ nav{
 
 .listeNav{
     list-style: none;
-    display: flex;
-    
+    display: flex;    
     /* Overide le css de base */
     margin-block-start: 0em;
     margin-block-end: 0em;

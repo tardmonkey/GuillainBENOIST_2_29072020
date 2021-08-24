@@ -4,9 +4,7 @@
     flex-direction: column;
     flex-wrap:wrap;
     margin: auto;
-    margin-top:-0.5rem;
-    width: 750px;
-    max-width:750px;
+    margin-top:-0.5rem;   
     gap: 1rem;
 
 }
@@ -19,7 +17,7 @@
 
 .divHeader{
     justify-content: flex-start;
-    gap:14rem;
+    gap:29%;
 }
 
 .filtre{
@@ -29,7 +27,7 @@
 /* HEBERGEMENTS */
 /* HEBERGEMENTS */
 .hebergements-block .texteHebergements{
-    width: 20rem;
+    width:45%;
     height: 12rem;
 }
 
@@ -40,7 +38,7 @@
 /* POPULAIRE */
 /* POPULAIRE */
 .hebergementsPopulaire-block{
-    width:auto;
+    width:100%;
     
 }
 
@@ -48,17 +46,17 @@
     align-items:center;
     
 }
+.contenuHebergementsPopulaire a{
+    width:100%;
+    
+}
 
 aside .texteHebergements img {
-    
+    width:60%;
     height: 8rem;
-    width: 20rem;
+    
 }
 
-.hebergementsPopulaire-block .texteHebergements{
-    width:40rem;
-    
-}
 
 
 
@@ -108,7 +106,7 @@ aside .texteHebergements img {
  .activités .texteHebergements img{
     height: 8rem;
     border-radius: 1rem 1rem 0em 0em;
-    width: 20rem;
+    width:100%;
      
  }
  
@@ -140,7 +138,7 @@ aside .texteHebergements img {
  .texteHebergementsPetit{
     display:flex;
     flex-direction: row;     
-     width: 100%;
+    
      gap:3rem;
      
 }
@@ -148,7 +146,7 @@ aside .texteHebergements img {
 .texteHebergementsPetit .texteHebergements{
     display:flex;
     flex-direction: column;    
-    width: 20rem;
+   width:50%;
   
 }
 
@@ -163,7 +161,7 @@ footer {
     margin:auto;
     width: auto;
     margin-top:4rem;
-   gap:5rem;
+    gap:5rem;
 }
 /* Suppression des effets de survol */
 /* Suppression des effets de survol */
