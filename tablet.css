@@ -20,6 +20,10 @@
     gap:29%;
 }
 
+nav{
+    margin-left: auto;
+}
+
 .filtre{
     margin-left: 0rem;
 }
