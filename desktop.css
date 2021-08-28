@@ -1,18 +1,15 @@
-@font-face {
-    font-family: "Raleway-black.ttf", "Raleway-Light.ttf", "source/Raleway/Raleway-Bold.ttf" Arial, Helvetica, sans-serif;
-    src: url(source/Raleway/Raleway-Black.ttf);
-    src: url(source/Raleway/Raleway-Light.ttf);
-    src: url(source/Raleway/Raleway-Bold.ttf);
-}
-
 img {
     object-fit:cover;
 }
 
 *{
-    font-family: "Raleway";
+
     box-sizing: border-box;
     
+}
+
+body, html{
+    font-family: 'Raleway', sans-serif;
 }
 
 
