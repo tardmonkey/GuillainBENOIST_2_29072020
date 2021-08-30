@@ -24,7 +24,7 @@ body, html{
 
 }
 a{
-    font-style: none;
+    font-style: normal;
     text-decoration: none;
     color:black
 }
@@ -32,7 +32,7 @@ a{
 /* Titres */
 h1{
     font-weight: bold;
-    font-weight:750;
+    font-weight:700;
     font-size: 1.5rem;
     
 }
@@ -44,7 +44,7 @@ h2{
 
 h3{
     
-    font-weight:750;
+    font-weight:700;
     font-size: 1.5rem;
 }
 .titre{
@@ -452,12 +452,6 @@ aside .infoTexteHebergements{
     
 /* Block activités */
 /* Block activités */
-
-.activités{
-    
-   margin-top: 2em;
-   padding-top: 2em;
-}
 
 .activités-block{
     display: flex;
