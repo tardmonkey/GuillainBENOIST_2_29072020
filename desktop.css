@@ -326,7 +326,7 @@ input[type=search] {
    flex-direction: column;       
     background-color: #fff;
     border-radius: 1rem;
-    border: #fff solid 0.2rem;
+    padding:5px;
     box-shadow: 0.3em 0.3em 1em rgba(0,0,0,0.3);   
     width: 30%;
     height: 12rem;
