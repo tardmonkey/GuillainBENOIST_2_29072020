@@ -2,7 +2,7 @@ img {
     object-fit:cover;
 }
 
-*{
+*,*::before,*::after{
 
     box-sizing: border-box;
     
@@ -12,17 +12,6 @@ body, html{
     font-family: 'Raleway', sans-serif;
 }
 
-
-.pageBody{
-    display:flex;
-    flex-direction: column;
-    flex-wrap:wrap;
-    margin: auto;
-    margin-top:-0.5rem;
-    max-width: 1300px;
-    gap: 1rem;
-
-}
 a{
     font-style: normal;
     text-decoration: none;
@@ -57,9 +46,70 @@ h4{
     margin:0em;
     
 }
-/* enlève le modèle de base de balises <a> */
 
+/* POPUP */
+/* POPUP */ 
+#popup--wrapper{
+   
+    left:10%;
+    top:10%;
+    width: 80%;
+    min-height: 90vh;
+    position: absolute;
+    z-index: 1;
+    display:none;
+}
+#popup--wrapper div:nth-child(1){
+    position: inherit;
+    
+    height: 100%;
+    width:51%;
 
+}
+#popup--wrapper div:nth-child(2){
+    position: inherit;
+    background-color: #0065FC;
+    height: 100%;
+    width:50%;
+    right:0;
+    color:white;
+    display:flex;
+    justify-content: center;
+    padding:5rem;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    
+}
+
+#popup--wrapper div:nth-child(2) h4{
+    font-size: 5rem;
+}
+#popup--wrapper div:nth-child(2) span{
+    font-size: 3rem;
+}
+#popup--wrapper div:nth-child(2) i{
+    font-size: 2rem;
+    color:white;
+}
+
+.popupImg{
+    height:100%;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.pageBody{
+    display:flex;
+    flex-direction: column;
+    flex-wrap:wrap;
+    margin: auto;
+    margin-top:-0.5rem;
+    max-width: 1300px;
+    gap: 1rem;
+
+}
 /* HEADER */
 /* HEADER */
 
