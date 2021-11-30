@@ -17,8 +17,7 @@ document.addEventListener("DOMContentLoaded", function(){
 
             popupImg.classList.remove("imgHebergements");
             popupImg.classList.add("popupImg");
-            popupWrapper.style.display = "block";
-            
+            popupWrapper.style.display = "flex";
             popupDiv1.append(popupImg);
             popupDiv2.append(popupTxt);
             popupWrapper.addEventListener("click", closePopup)  
@@ -26,7 +25,8 @@ document.addEventListener("DOMContentLoaded", function(){
                 popupWrapper.style.display = "none";
                 popupImg.classList.add("imgHebergements");
                 popupImg.classList.remove("popupImg");
-                
+                popupDiv1.removeChild(popupImg);
+                popupDiv2.removeChild(popupTxt);
             }         
 
          }
